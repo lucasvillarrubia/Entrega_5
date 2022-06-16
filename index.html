@@ -10,7 +10,7 @@
 </head>
 <body>
         <header>
-                <a href="#" class="logo"><img src="./img/loguito.png" alt="logo_empresa" class="logo"></a>
+                <a href="#" class="logo_header"><img src="./img/loguito.png" alt="logo_empresa" class="logo_header"></a>
                 <nav class="nav">
                         <ul class="lista_links">
                                 <li class="nav-item">
@@ -55,23 +55,23 @@
                 </section>
                 <section class="beneficios">
                         <div class="cont_beneficios">
-                                <div class="intro_seccion">
-                                        <h2 class="titulo_seccion">Por qué deberías elegirme</h2>
-                                        <p class="info_seccion"></p>
+                                <div class="intro_beneficios">
+                                        <h2 class="titulo_beneficios">Por qué deberías elegirme</h2>
+                                        <p class="info_beneficios"></p>
                                 </div>
-                                <div class="lista_seccion">
+                                <div class="lista_beneficios">
                                         <div class="beneficio">
-                                                <i class="fa-solid fa-wand-magic-sparkles icono_beneficios"></i>
+                                                <i class="fa-solid fa-wand-magic-sparkles icono_beneficio"></i>
                                                 <h3 class="nombre_beneficio">Amplia oferta de funcionalidades</h3>
                                                 <div class="texto_beneficio"></div>
                                         </div>
                                         <div class="beneficio">
-                                                <i class="fa-solid fa-heart-circle-check icono_beneficios"></i>
+                                                <i class="fa-solid fa-heart-circle-check icono_beneficio"></i>
                                                 <h3 class="nombre_beneficio">Atención personalizada</h3>
                                                 <div class="texto_beneficio"></div>
                                         </div>
                                         <div class="beneficio">
-                                                <i class="fa-brands fa-algolia icono_beneficios"></i>
+                                                <i class="fa-brands fa-algolia icono_beneficio"></i>
                                                 <h3 class="nombre_beneficio">Entrega en tiempo y forma</h3>
                                                 <p class="texto_beneficio">Definitivamente no hago entregas a último momento :{</p>
                                         </div>
@@ -80,11 +80,11 @@
                 </section>
                 <section class="workflow">
                         <div class="cont_workflow">
-                                <div class="intro_seccion">
-                                        <h2 class="titulo_seccion">Cómo trabajo</h2>
-                                        <p class="info_seccion">Por el momento utilizo HTML y CSS en conjunto para programar los sitios web y sus funcionalidades (proximamente JS)</p>
+                                <div class="intro_workflow">
+                                        <h2 class="titulo_workflow">Cómo trabajo</h2>
+                                        <p class="info_workflow">Por el momento utilizo HTML y CSS en conjunto para programar los sitios web y sus funcionalidades (proximamente JS)</p>
                                 </div>
-                                <div class="lista_seccion">
+                                <div class="lista_workflow">
                                         <div class="accion">
                                                 <i class="fa-solid fa-1 numero_accion"></i>
                                                 <h3 class="nombre_accion">Boceto</h3>
@@ -107,23 +107,24 @@
                                         </div>
                                 </div>
                         </div>
-
                 </section>
                 <section class="proyectos">
                         <div class="cont_proyectos">
-                                <div class="intro_seccion">
-                                        <h2 class="titulo_seccion">Cuáles son algunos de mis proyectos</h2>
+                                <div class="intro_proyectos">
+                                        <h2 class="titulo_proyectos">Cuáles son algunos de mis proyectos</h2>
                                 </div>
-                                <div class="lista_seccion">
+                                <div class="lista_proyectos">
                                         <div class="proyecto">
-                                                <img src="./img/istockphoto-1149316411-612x612-PhotoRoom.png" alt="todavía no hice desafíos :(" class="imagen_proyecto">
+                                                <img src="./img/9-PhotoRoom (1).png" alt="todavía no hice desafíos :(" class="imagen_proyecto">
+                                                <div class="link_proyecto">linkkkkk</div>
                                         </div>
                                         <div class="proyecto">
                                                 <img src="./img/oops-404-error-with-a-broken-robot-rafiki-2849.png" alt="todavía no hice otros sitios :(" class="imagen_proyecto">
+                                                <div class="link_proyecto">linkkkk</div>
                                         </div>
                                         <div class="proyecto">
                                                 <img src="./img/pngtree-cartoon-hand-drawn-business-404-error-illustration-png-image_2220254-transformed-PhotoRoom.png" alt="todavía toy chikito :(" class="imagen_proyecto">
-                                                <div class="imagen_proyecto"></div>
+                                                <div class="link_proyecto">linkkkk</div>
                                         </div>
                                 </div>
                         </div>
@@ -131,39 +132,51 @@
                 <section class="contacto">
                         <div class="cont_contacto">
                                 <div class="intro_contacto">
-                                        <h2 class="titulo_seccion">Contactame!</h2>
-                                        <div class="formulario_contacto">
-                                                <form>
-                                                        <div>
-                                                                <label for="nombre_contacto">Nombre </label>
-                                                                <input type="text" id="nombre_contacto">
-                                                        </div>
-                                                        <div>
-                                                                <label for="correo_contacto">Correo </label>
-                                                                <input type="email" id="correo">
-                                                        </div>
-                                                        <div>
-                                                                <label for="mensaje_contacto">Mensaje </label>
-                                                                <input type="text" id="mensaje_contacto">
-                                                        </div>
-                                                        <div>
-                                                                <input type="submit">
-                                                        </div>
-                                                </form>
-                                        </div>
+                                        <h2 class="titulo_contacto">Contactame!</h2>
+                                        <form class="formulario_contacto">
+                                                <div>
+                                                        <label for="nombre_contacto">Nombre </label>
+                                                        <input type="text" id="nombre_contacto">
+                                                </div>
+                                                <div>
+                                                        <label for="correo_contacto">Correo </label>
+                                                        <input type="email" id="correo_contacto">
+                                                </div>
+                                                <div>
+                                                        <label for="mensaje_contacto">Mensaje </label>
+                                                        <input type="text" id="mensaje_contacto">
+                                                </div>
+                                                <div>
+                                                        <input type="submit" class="boton enviar">
+                                                </div>
+                                        </form>
                                 </div>
                                 <div class="modos_contacto">
-                                        <div class="direccion_contacto"></div>
-                                        <div class="redes_contacto"></div>
+                                        <div class="direccion_contacto">
+                                                <p class="ubicacion"> Calle Calle 243</p>
+                                                <p class="telefono">Teléfono 23423948</p>
+                                        </div>
+                                        <div class="redes_contacto">
+                                                <a href="#"><img src="./img/social-whatsapp-circle-512.png" alt="whatsapp" class="link_redes"></a>
+                                                <a href="#"><img src="./img/Round-Instagram-Logo-PNG-HD-Quality.png" alt="instagram" class="link_redes"></a>
+                                                <a href="#"><img src="./img/Facebook_f_logo_(2019).svg.png" alt="facebook" class="link_redes"></a>
+                                                <a href="#"><img src="./img/LinkedIn-Symbole-PhotoRoom.png" alt="linkedin" class="link_redes"></a>
+                                        </div>
                                 </div>
                                 <div class="mapa_contacto">
-                                        <div class="imagen_mapa"></div>
+                                        <a href="#"><img src="./img/ff05dc4dad240614d98afb8fe10733dc-PhotoRoom.png" alt="ubicacion_google_maps" class="imagen_mapa"></a>
                                 </div>
                         </div>
                 </section>
         </main>
         <footer>
-                footer
+                <a href="#" class="logo"><img src="./img/loguito.png" alt="logo_empresa" class="logo_footer"></a>
+                <p class="derechos_footer">2022 Casiprogramando ® - All Rights Reserved</p>
+                <div class="links_footer">
+                        <a href="#">Denunciar</a> |
+                        <a href="#">Términos y Condiciones</a> |
+                        <a href="#">Política de Privacidad</a>
+                </div>
         </footer>
 </body>
 </html>

@@ -10,16 +10,21 @@ body {
         font-family: 'Play', sans-serif;
 }
 
+a {
+        text-decoration: none;
+}
+
+/* -------------------- NAVBAR -------------------- */
 header {
         background: rgb(252, 207, 9);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 20vh;
+        height: 15vh;
         padding: 0 50px 0 20px;
 }
 
-.logo {
+.logo_header {
         height: 90%;
 }
 
@@ -40,15 +45,37 @@ header {
         padding: 1rem;
         background: rgb(237, 28, 36);
         color: white;
+        border-radius: 20px;
 }
 
+
+/* -------------------- BIENVENIDA -------------------- */
 .cont_bienvenida {
+        margin: 3rem;
         background: rgb(253, 255, 252);
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80vh;
         gap: 5rem;
+}
+
+.cont_info_botones {
+        margin: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        font-size: 20px;
+}
+
+.titulo_bienvenida {
+        max-width: 500px;
+        font-size: 50px;
+        color: black;
+}
+
+.texto_bienvenida {
+        max-width: 500px;
+        color: black;
 }
 
 .botones {
@@ -74,40 +101,19 @@ header {
         color: black;
 }
 
-a {
-        text-decoration: none;
-}
-
-.bienvenida h1 {
-        max-width: 500px;
-        font-size: 50px;
-        color: black;
-}
-
-.bienvenida p {
-        max-width: 500px;
-        color: black;
-}
-
-.cont_info_botones {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        font-size: 20px;
-}
-
 .imagen_landing {
-        width: 500px;
+        width: 700px;
         height: auto;
         border-radius: 5px;
 }
 
+
+/* -------------------- DESCRIPCIÓN -------------------- */
 .cont_descripcion {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 50vh;
         background: black;
 }
 
@@ -115,39 +121,54 @@ a {
         max-width: 750px;
         font-size: 20px;
         color: antiquewhite;
+        margin: 3rem;
 }
 
+#flecha_izq {
+        color: white;
+}
+
+#flecha_der {
+        color: white;
+}
+
+
+/* -------------------- BENEFICIOS -------------------- */
 .cont_beneficios {
+        background-color: orange;
         text-align: center;
-        margin: 2rem;
+        padding: 2rem;
 }
 
-.titulo_seccion {
+.titulo_beneficios {
         margin-bottom: 2rem;
         font-size: 40px;
 }
 
-.intro_beneficios {
+.info_beneficios {
         margin: 2rem;
         font-size: 20px;
 }
 
-.lista_seccion {
+.lista_beneficios {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
 }
 
-.beneficios {
+.beneficio {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        background-color: rgb(237, 28, 36);
+        background-color: orangered;
         padding: 1rem;
+        border-radius: 30px;
+        max-width: 400px;
+        height: 300px;
 }
 
-.icono_beneficios {
+.icono_beneficio {
         font-size: 100px;
         color:aliceblue;
 }
@@ -163,26 +184,26 @@ a {
 }
 
 
+/* -------------------- WORKFLOW -------------------- */
 .cont_workflow {
-        height: 90vh;
         text-align: center;
         padding: 3rem 2rem;
         background-color: rgb(77, 5, 147);
 }
 
-.titulo_trabajo {
+.titulo_workflow {
         margin-bottom: 2rem;
         font-size: 40px;
         color: azure;
 }
 
-.info_seccion {
+.info_workflow {
         margin: 2rem;
         font-size: 20px;
         color: white;
 }
 
-.container_secuencia {
+.lista_workflow {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -194,37 +215,187 @@ a {
         flex-direction: column;
         gap: 30px;
         width: 300px;
-        height: 200px;
+        height: 250px;
         background-color: white;
         padding: 1rem;
         border-radius: 30px;
 }
 
-.beneficio {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        width: 300px;
-        height: 350px;
-        background-color: black;
-        padding: 1rem;
-        border-radius: 30px;
-}
-
-.icono_pasos {
+.numero_accion {
         font-size: 100px;
 }
 
-.nombre_pasos {
+.nombre_accion {
         font-size: 30px;
         color: black;
 }
 
-.descrip_pasos {
+.texto_accion {
         font-size: 20px;
         color: black;
 }
 
+
+/* -------------------- PROYECTOS -------------------- */
+.cont_proyectos {
+        padding: 3rem 2rem;
+        background-color: rgb(100, 100, 147);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.titulo_proyectos {
+        margin-bottom: 2rem;
+        font-size: 40px;
+        color: azure;
+}
+
+.lista_proyectos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+}
+
+.proyecto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+}
+
 .imagen_proyecto {
-        height: 300px;
+        height: 350px;
+        width: auto;
+        background-color: rgb(154, 154, 219);
+        border-radius: 30px;
+}
+
+.link_proyecto {
+        position: absolute;
+        background-color: white;
+        z-index: 2;
+        width: 150px;
+        text-align: center;
+        border: 5px solid black;
+        padding: 1rem 0.5rem;
+        border-radius: 50px;
+        font-size: 20px;
+        display: none;
+}
+
+.imagen_proyecto:hover ~ .link_proyecto {
+        display: block;
+}
+
+.link_proyecto:hover ~ .link_proyecto {
+        display: block;
+}
+
+
+/* -------------------- CONTACTO -------------------- */
+.cont_contacto {
+        padding: 3rem 3rem;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+}
+
+.titulo_contacto {
+        margin-bottom: 2rem;
+        font-size: 40px;
+        color: black;
+}
+
+.formulario_contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: right;
+        gap: 20px;
+}
+
+.formulario_contacto div {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        gap: 20px;
+}
+
+.formulario_contacto input {
+        border: 2px solid black;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        font-size: 20px;
+}
+
+.formulario_contacto label {
+        font-size: 20px;
+}
+
+#mensaje_contacto {
+        height: 150px;
+}
+
+.enviar {
+        background-color: rgb(252, 207, 9);
+        cursor: pointer;
+}
+
+.modos_contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+}
+
+.redes_contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+}
+
+.link_redes {
+        height: 75px;
+}
+
+.imagen_mapa {
+        height: 450px;
+        width: auto;
+}
+
+
+/* -------------------- FOOTER -------------------- */
+footer {
+        background: rgb(252, 207, 9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+}
+
+.logo_footer {
+        height: 150px;
+}
+
+.derechos_footer {
+        color: rgb(77, 5, 147);
+        font-size: 20px;
+}
+
+.links_footer a {
+        text-decoration: underline;
+        font-size: 15px;
+        color: rgb(77, 5, 147);
 }
