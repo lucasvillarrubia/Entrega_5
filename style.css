@@ -51,7 +51,7 @@ header {
 
 /* -------------------- BIENVENIDA -------------------- */
 .cont_bienvenida {
-        margin: 3rem;
+        margin: 1rem 3rem;
         background: rgb(253, 255, 252);
         display: flex;
         justify-content: center;
@@ -111,25 +111,40 @@ header {
 /* -------------------- DESCRIPCIÓN -------------------- */
 .cont_descripcion {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        gap: 30px;
         align-items: center;
         text-align: center;
         background: black;
+        padding: 3rem 2rem;
 }
 
 .texto_descripcion {
         max-width: 750px;
         font-size: 20px;
         color: antiquewhite;
-        margin: 3rem;
+        text-justify: auto;
 }
 
 #flecha_izq {
         color: white;
+        font-size: 80px;
+        animation-name: sube_y_baja;
+        animation-delay: 1s;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
 }
 
 #flecha_der {
+        font-size: 80px;
         color: white;
+        animation-name: sube_y_baja;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
 }
 
 
@@ -137,7 +152,7 @@ header {
 .cont_beneficios {
         background-color: orange;
         text-align: center;
-        padding: 2rem;
+        padding: 3rem 2rem;
 }
 
 .titulo_beneficios {
@@ -153,23 +168,23 @@ header {
 .lista_beneficios {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-around;
+        align-items: baseline;
 }
 
 .beneficio {
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        background-color: orangered;
-        padding: 1rem;
+        justify-content: space-between;
+        gap: 20px;
+        background-color: rgb(153, 41, 0);
+        padding: 2rem;
         border-radius: 30px;
         max-width: 400px;
-        height: 300px;
 }
 
 .icono_beneficio {
-        font-size: 100px;
+        font-size: 80px;
         color:aliceblue;
 }
 
@@ -214,15 +229,15 @@ header {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        width: 300px;
-        height: 250px;
+        max-width: 300px;
+        min-height: 350px;
         background-color: white;
-        padding: 1rem;
+        padding: 2rem 1rem;
         border-radius: 30px;
 }
 
 .numero_accion {
-        font-size: 100px;
+        font-size: 80px;
 }
 
 .nombre_accion {
@@ -275,7 +290,7 @@ header {
         border-radius: 30px;
 }
 
-.link_proyecto {
+.cartel_proyecto {
         position: absolute;
         background-color: white;
         z-index: 2;
@@ -288,24 +303,32 @@ header {
         display: none;
 }
 
-.imagen_proyecto:hover ~ .link_proyecto {
+.link_proyecto:hover ~ .cartel_proyecto {
         display: block;
 }
 
-.link_proyecto:hover ~ .link_proyecto {
-        display: block;
+.link_proyecto:hover ~ .proyecto {
+        background-color: rgb(154, 154, 219);
+        z-index: 1;
+}
+
+.link_proyecto:hover ~ .imagen_proyecto {
+        z-index: 2;
 }
 
 
 /* -------------------- CONTACTO -------------------- */
 .cont_contacto {
-        padding: 3rem 3rem;
         background-color: white;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 100px;
+}
+
+.intro_contacto {
+        padding: 3rem;
 }
 
 .titulo_contacto {
@@ -326,10 +349,12 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: right;
+        align-items: center;
         gap: 20px;
 }
 
 .formulario_contacto input {
+        background-color: rgb(240, 240, 240);
         border: 2px solid black;
         padding: 0.5rem 1rem;
         border-radius: 30px;
@@ -341,10 +366,14 @@ header {
 }
 
 #mensaje_contacto {
-        height: 150px;
+        border: 2px solid black;
+        background-color: rgb(240, 240, 240);
+        padding: 1rem;
+        border-radius: 30px;
+        font-size: 20px;
 }
 
-.enviar {
+#enviar {
         background-color: rgb(252, 207, 9);
         cursor: pointer;
 }
@@ -353,49 +382,95 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         gap: 30px;
+}
+
+.direccion_contacto p {
+        font-size: 20px;
+}
+
+#cartel_contacto {
+        font-size: 25px;
+        margin-bottom: 20px;
 }
 
 .redes_contacto {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        gap: 50px;
+        gap: 20px;
         flex-wrap: wrap;
 }
 
 .link_redes {
-        height: 75px;
+        padding: 1rem;
+        height: 100px;
+}
+
+.mapa_contacto {
+        position: relative;
 }
 
 .imagen_mapa {
-        height: 450px;
-        width: auto;
+        height: 650px;
+        width: 450px;
+        float: right;
+}
+
+.imagen_pin {
+        height: 200px;
+        top: 110px;
+        left: 7.5px;
+        position: absolute;
+        animation-name: sube_y_baja;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes sube_y_baja {
+        0% {
+                transform: translateY(-10px);
+        }
+        100% {
+                transform: translateY(10px);
+        }
 }
 
 
 /* -------------------- FOOTER -------------------- */
 footer {
-        background: rgb(252, 207, 9);
+        background: rgb(77, 5, 147);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 40vh;
+        padding: 1rem;
 }
 
 .logo_footer {
-        height: 150px;
+        background: rgb(252, 207, 9);
+        border-radius: 500px;
+        height: 125px;
+        margin: 1rem;
 }
 
 .derechos_footer {
-        color: rgb(77, 5, 147);
+        color: rgb(252, 207, 9);
         font-size: 20px;
 }
 
 .links_footer a {
         text-decoration: underline;
         font-size: 15px;
-        color: rgb(77, 5, 147);
+        color: rgb(252, 207, 9);
+}
+
+@media (min_width:720px) {
+        * {
+                flex-wrap: wrap;
+        }
 }
