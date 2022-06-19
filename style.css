@@ -346,13 +346,14 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 380px;
+        width: 300px;
         background-color: rgb(154, 154, 219);
         border-radius: 10px;
 }
 
 .imagen_proyecto {
         max-height: 150px;
+        width: auto;
 }
 
 .cartel_proyecto {
@@ -588,6 +589,7 @@ footer {
                 flex-direction: row;
                 justify-content: space-around;
                 gap: 100px;
+                max-width: none;
         }
         
         .cont_info_botones {
@@ -595,15 +597,18 @@ footer {
                 justify-content: space-between;
                 align-items: baseline;
                 gap: 50px;
+                max-width: none;
         }
         
         .titulo_bienvenida {
                 margin: 0;
                 text-align: left;
                 font-size: 60px;
+                max-width: none;
         }
-
+        
         .texto_bienvenida {
+                max-width: none;
                 text-align: left;
                 max-width: 750px;
                 color: black;
