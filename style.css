@@ -109,20 +109,23 @@ header {
         align-items: center;
         gap: 30px;
         font-size: 25px;
+        max-width: 380px;
 }
 
 .titulo_bienvenida {
-        margin: 1rem;
+        padding: 2rem;
         text-align: center;
         overflow-wrap: break-word;
         font-size: 50px;
         color: black;
+        max-width: 380px;
 }
 
 .texto_bienvenida {
         text-align: center;
         text-justify: auto;
         color: black;
+        max-width: 380px;
 }
 
 .botones {
@@ -133,9 +136,9 @@ header {
 
 .boton {
         border: 5px solid black;
-        padding: 1rem 1.5rem;
+        padding: 1rem;
         border-radius: 50px;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
@@ -344,6 +347,7 @@ header {
         justify-content: center;
         align-items: center;
         min-width: 380px;
+        width: 80%;
         background-color: rgb(154, 154, 219);
         border-radius: 10px;
 }
