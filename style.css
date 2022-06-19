@@ -346,8 +346,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-width: 380px;
-        width: 80%;
+        width: 380px;
         background-color: rgb(154, 154, 219);
         border-radius: 10px;
 }
