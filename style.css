@@ -98,6 +98,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 380px;
 }
 
 .cont_info_botones {
