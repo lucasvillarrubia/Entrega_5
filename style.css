@@ -108,6 +108,7 @@ header {
         align-items: center;
         gap: 30px;
         font-size: 25px;
+        max-width: 400px;
 }
 
 .titulo_bienvenida {
@@ -137,6 +138,7 @@ header {
         font-size: 20px;
         font-weight: bold;
         text-transform: uppercase;
+        text-align: center;
 }
 
 .learn {
@@ -341,13 +343,14 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 400px;
+        min-width: 400px;
         background-color: rgb(154, 154, 219);
         border-radius: 10px;
 }
 
 .imagen_proyecto {
-        max-height: 250px;
+        max-width: 250px;
+        height: auto;
 }
 
 .cartel_proyecto {
@@ -409,7 +412,7 @@ header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: right;
+        justify-content: left;
         align-items: center;
         gap: 20px;
 }
