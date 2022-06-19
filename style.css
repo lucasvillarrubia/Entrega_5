@@ -108,13 +108,12 @@ header {
         align-items: center;
         gap: 30px;
         font-size: 25px;
-        max-width: 380px;
 }
 
 .titulo_bienvenida {
+        margin: 1rem;
         text-align: center;
         overflow-wrap: break-word;
-        max-width: 380px;
         font-size: 50px;
         color: black;
 }
@@ -343,13 +342,13 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 380px;
+        min-width: 380px;
         background-color: rgb(154, 154, 219);
         border-radius: 10px;
 }
 
 .imagen_proyecto {
-        max-height: 200px;
+        max-height: 150px;
 }
 
 .cartel_proyecto {
@@ -484,15 +483,15 @@ header {
 }
 
 .imagen_mapa {
-        height: 600px;
-        width: 400px;
+        height: 500px;
+        width: 350px;
         float: right;
 }
 
 .imagen_pin {
         height: 200px;
-        top: 110px;
-        left: 7.5px;
+        top: 50px;
+        left: -10px;
         position: absolute;
         animation-name: sube_y_baja;
         animation-duration: 1s;
@@ -595,6 +594,7 @@ footer {
         }
         
         .titulo_bienvenida {
+                margin: 0;
                 text-align: left;
                 font-size: 60px;
         }
@@ -660,7 +660,7 @@ footer {
         .beneficio {
                 gap: 30px;
                 padding: 3rem;
-                max-width: 500px;
+                max-width: 400px;
         }
 
         /* -------------------- WORKFLOW -------------------- */
@@ -671,10 +671,10 @@ footer {
         }
 
         .accion {
-                gap: 30px;
-                padding: 2rem;
+                gap: 10px;
+                padding: 3rem 0.5rem;
                 border-radius: 20px;
-                max-width: 400px;
+                max-width: 300px;
         }
 
         /* -------------------- PROYECTOS -------------------- */
@@ -684,12 +684,12 @@ footer {
         }
 
         .proyecto {
-                min-width: 500px;
+                min-width: 400px;
                 border-radius: 10px;
         }
         
         .imagen_proyecto {
-                min-height: 350px;
+                min-height: 250px;
         }
 
         /* -------------------- CONTACTO -------------------- */
