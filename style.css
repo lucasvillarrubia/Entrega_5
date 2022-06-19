@@ -113,7 +113,7 @@ header {
 
 .titulo_bienvenida {
         text-align: center;
-        text-overflow: clip;
+        overflow-wrap: break-word;
         max-width: 380px;
         font-size: 50px;
         color: black;
@@ -349,7 +349,7 @@ header {
 }
 
 .imagen_proyecto {
-        height: 100%;
+        max-height: 200px;
 }
 
 .cartel_proyecto {
@@ -484,8 +484,8 @@ header {
 }
 
 .imagen_mapa {
-        height: 650px;
-        width: 450px;
+        height: 600px;
+        width: 400px;
         float: right;
 }
 
@@ -697,7 +697,6 @@ footer {
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
-                flex-wrap: wrap;
                 padding: 0;
         }
         
