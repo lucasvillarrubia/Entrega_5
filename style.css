@@ -390,10 +390,12 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 380px;
 }
 
 .intro_contacto {
         padding: 3rem 1.5rem 1rem;
+        max-width: 380px;
 }
 
 .titulo_contacto {
@@ -426,6 +428,7 @@ header {
         padding: 0.5rem 1rem;
         border-radius: 30px;
         font-size: 20px;
+        max-width: 300px;
 }
 
 .formulario_contacto label {
@@ -455,6 +458,7 @@ header {
         gap: 30px;
         order: 2;
         width: 100%;
+        max-width: 380px;
 }
 
 .direccion_contacto p {
