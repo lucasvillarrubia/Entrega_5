@@ -492,15 +492,14 @@ header {
 }
 
 .imagen_mapa {
-        height: 500px;
-        width: 350px;
-        float: right;
+        height: 450px;
+        width: 300px;
 }
 
 .imagen_pin {
-        height: 200px;
-        top: 50px;
-        left: -10px;
+        height: 150px;
+        top: 70px;
+        left: -5px;
         position: absolute;
         animation-name: sube_y_baja;
         animation-duration: 1s;
@@ -738,6 +737,7 @@ footer {
                 min-height: 650px;
                 min-width: 450px;
                 height: auto;
+                float: right;
         }
         
         .imagen_pin {
